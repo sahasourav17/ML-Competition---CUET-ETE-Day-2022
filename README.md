@@ -6,7 +6,50 @@ Competetion link: https://www.kaggle.com/competitions/nlp-competition-cuet-ete-d
 
 Leaderboard: https://www.kaggle.com/competitions/nlp-competition-cuet-ete-day-2022/leaderboard
 
+
+## Train Dataset Visualization:
+
+* ### Label Distribution
+
+![alt text](https://github.com/sahasourav17/ML-Competition-CUET-ETE-Day-2022/blob/main/Label_Distribution.png?raw=true)
+
+From label distribution, we can see that the dataset is imbalanced. As deep learning model can handle imbalanced dataset, we didn't need to use upsampling and downsampling technique.
+
+#### Problems of Upsampling and Downsampling:
+If we do downsampling , our model will lose vast amount of potential Data.
+If we do upsampling, our model will lose it generalization ability.
+
+* ### Data Statistics
+
+![alt text](https://github.com/sahasourav17/ML-Competition-CUET-ETE-Day-2022/blob/main/Data_Statistics.png?raw=true)
+
+* ### Frequency Length Distribution
+
+![alt text](https://github.com/sahasourav17/ML-Competition-CUET-ETE-Day-2022/blob/main/Frequency_Length_Distribution.png?raw=true)
+
+From frequency length distribution, we can find out the maximum,minimum and average length of our training data which will guide us during Tokenization and Model creation phase.
+
 ## Model Architecture:
 
+Here, I've lately fused four model to build a Fusion model. No word embedding is used.
+Models I've used:
+
+* BiGRU (Bidirectional Gated Recurrent Unit)
+* BiLSTM (Bidirectional Long Short Term Memory)
+* BiGRU + CNN (Hybrid Model)
+* BiLSTM + CNN (Hybrid Model)
+
+![alt text](https://github.com/sahasourav17/ML-Competition-CUET-ETE-Day-2022/blob/main/Model_Architecture.png?raw=true)
+
+## Model Evaluation:
+
+* ### Accuracy Curve
+
+![alt text](https://github.com/sahasourav17/ML-Competition-CUET-ETE-Day-2022/blob/main/Accuracy_Curve.png?raw=true)
+
+* ### Loss Curve
+
+![alt text](https://github.com/sahasourav17/ML-Competition-CUET-ETE-Day-2022/blob/main/Loss_Curve.png?raw=true)
 
 
+## Accuracy: 86.308%
